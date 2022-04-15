@@ -1,0 +1,30 @@
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f2f;
+  }
+</style>
+<p style="margin-right: 20px; color: white">
+  A - move left<br />D - move right<br />SPACE - shoot
+</p>
+<div style="position: relative">
+  <p
+    style="
+      position: absolute;
+      z-index: 10;
+      color: white;
+      left: 15px;
+      top: 5px;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 14px;
+    "
+  >
+    <span>Score:</span> <span id="scoreEl">0</span>
+  </p>
+  <canvas></canvas>
+</div>
+<script src="index.js"></script>
