@@ -34,6 +34,7 @@ body {
   width: 10rem;
   height: 7.4rem;
   margin-top: 0.4rem;
+  margin-left: -2.4rem;
 }
 
 .main-nav {
@@ -75,7 +76,7 @@ body {
 
 /* ******HERO SECTION******* */
 
-.hero-main-break::after {
+/* .hero-main-break::after {
   content: " ";
   position: absolute;
   transform: translate(300%, 0);
@@ -85,10 +86,10 @@ body {
     rgba(194, 126, 204, 0),
     rgba(194, 126, 204, 0.197),
     rgba(194, 126, 204, 0.405)
-  /* );* */
+  /* );* 
   height: 53.1rem;
   width: 36rem;
-}
+} */
 
 .hero-container {
   display: grid;
@@ -172,7 +173,7 @@ body {
     rgba(194, 126, 204, 0.405)
   ); */
 
-  width: 75vw;
+  width: 100vw;
 }
 
 .break-1 {
@@ -182,7 +183,7 @@ body {
 
 .break-2 {
   height: 0.6rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .break-3 {
