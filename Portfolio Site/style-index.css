@@ -91,6 +91,10 @@ body {
   width: 36rem;
 } */
 
+.section-hero {
+  height: 60vh;
+}
+
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -140,13 +144,14 @@ body {
 .hero-btn {
   border: none;
   font-family: inherit;
+  cursor: pointer;
   font-size: 1.6rem;
   font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 1rem;
   transition: all 0.3s;
 }
-.light-btn {
+.css-btn {
   background-color: #eee;
   border: 0.2rem solid #1d0933;
 }
@@ -161,7 +166,7 @@ body {
   color: #eee;
   border-color: #451775;
 }
-.light-btn:hover {
+.css-btn:hover {
   background-color: rgba(203, 155, 211, 0.199);
 }
 
