@@ -380,7 +380,9 @@ body {
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 4rem;
   padding: 4rem;
   /* ^^DELETE THIS LATER^^ */
@@ -388,30 +390,33 @@ body {
 
 .card-style {
   position: relative;
+  text-align: center;
   display: grid;
   overflow: hidden;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
-  color: white;
+  color: rgba(255, 255, 255, 0);
   justify-items: center;
-  height: 30rem;
-  width: 24rem;
+  height: 36rem;
+  width: 54rem;
   border-radius: 1rem;
   transition: all 0.3s;
 }
 
-.card-one {
-  background-image: linear-gradient(to bottom, #e664647a, #9198e57a),
-    url(img/guess-my-number-copy.png);
-  box-shadow: 0 2px 4px 4px rgba(124, 18, 119, 0.2);
+.card-style:nth-child(1) {
+  background-image: url(img/jzp-thumb.webp);
+  box-shadow: 0 6px 4px 4px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.card-one:hover {
-  box-shadow: 0 12px 12px 4px rgba(116, 14, 110, 0.2);
+.card-style:nth-child(1):hover {
+  color: white;
+  background-image: linear-gradient(to bottom, #5b5b5b80, #2727277b),
+    url(img/jzp-thumb.webp);
+  box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .card-two {
