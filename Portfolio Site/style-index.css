@@ -403,14 +403,14 @@ body {
   transition: all 0.3s;
 }
 
-.card-style:nth-child(1) {
+.card-one {
   background-image: url(img/jzp-thumb.webp);
-  box-shadow: 0 6px 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.card-style:nth-child(1):hover {
+.card-one:hover {
   color: white;
   background-image: linear-gradient(to bottom, #5b5b5b80, #2727277b),
     url(img/jzp-thumb.webp);
@@ -420,17 +420,19 @@ body {
 }
 
 .card-two {
-  background-image: linear-gradient(to bottom, #7aced639, #d982bd50),
-    url(img/spaceInvaders.png);
-  box-shadow: 0 2px 4px 4px rgba(72, 126, 131, 0.254);
+  background-image: url(img/zarcom-thumb.webp);
+  box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .card-two:hover {
-  box-shadow: 0 12px 12px 4px rgba(72, 126, 131, 0.256);
+  color: white;
+  background-image: linear-gradient(to bottom, #5b5b5b80, #2727277b),
+    url(img/zarcom-thumb.webp);
+  box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .card-title {
