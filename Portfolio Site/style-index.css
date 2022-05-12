@@ -150,7 +150,7 @@ body {
   place-items: center;
   position: relative;
   width: 25rem;
-  height: 12rem;
+  height: 6.5rem;
   border-radius: 1rem;
   background: linear-gradient(45deg, rgb(123, 207, 199), rgb(194, 126, 204));
   overflow: hidden;
@@ -173,7 +173,7 @@ body {
   align-self: center;
   place-items: center;
   width: 24rem;
-  height: 11rem;
+  height: 5.5rem;
   background: linear-gradient(45deg, #242424 18rem, #333333 2rem);
   border-radius: 0.8rem;
   z-index: 1;
@@ -368,6 +368,10 @@ body {
 .section-projects {
   background-color: #eee;
   padding-top: 20rem;
+  /* background: linear-gradient(
+    rgba(194, 126, 204, 0.405) 2rem,
+    rgba(194, 126, 204, 0.136) 18rem
+  ); */
 }
 
 .section-title {
@@ -449,7 +453,7 @@ body {
   color: white;
   background-image: linear-gradient(to bottom, #5b5b5b80, #2727277b),
     url(img/jzp-thumb.webp);
-  box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
   transform: scale(1.05, 1.05);
 }
@@ -465,7 +469,7 @@ body {
   color: white;
   background-image: linear-gradient(to bottom, #5b5b5b80, #2727277b),
     url(img/zarcom-thumb.webp);
-  box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
   transform: scale(1.05, 1.05);
 }
