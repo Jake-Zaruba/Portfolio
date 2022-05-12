@@ -424,6 +424,17 @@ body {
   line-height: 1.4;
   font-weight: 300;
   width: 85%;
+  margin-bottom: 1.6rem;
+}
+
+.learn-more {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.learn-more:link,
+.learn-more:visited {
+  color: inherit;
 }
 
 .card-one {
