@@ -373,17 +373,22 @@ body {
 .section-title {
   display: flex;
   justify-content: center;
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 18rem;
+  letter-spacing: 2rem;
+  color: #45454534;
+  font-weight: 800;
   /* margin-top: 20rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .cards {
   display: grid;
+  justify-items: center;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 4rem;
+  row-gap: 12rem;
+  column-gap: 4rem;
   padding: 4rem;
   /* ^^DELETE THIS LATER^^ */
 }
@@ -403,11 +408,30 @@ body {
   transition: all 0.3s;
 }
 
+.project-description {
+  align-self: center;
+  margin-left: 8rem;
+  margin-right: 0;
+}
+
+.project-description .heading-secondary {
+  /* text-align: center; */
+  margin-bottom: 1.6rem;
+}
+
+.paragraph-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 300;
+  width: 85%;
+}
+
 .card-one {
   background-image: url(img/jzp-thumb.webp);
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
+  /* margin-bottom: 6rem; */
 }
 
 .card-one:hover {
@@ -416,7 +440,7 @@ body {
     url(img/jzp-thumb.webp);
   box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
 }
 
 .card-two {
@@ -432,7 +456,7 @@ body {
     url(img/zarcom-thumb.webp);
   box-shadow: 4px 12px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
 }
 
 .card-title {
