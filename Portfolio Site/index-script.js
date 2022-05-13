@@ -1,5 +1,9 @@
 "strict mode";
 
+//////////////////////////////////////
+//PROJECT FOCUS////////////////////
+////////////////////////////////////
+
 const project = document.querySelectorAll(`.project`);
 
 const projectObserver = new IntersectionObserver(
@@ -16,6 +20,10 @@ const projectObserver = new IntersectionObserver(
 project.forEach((project) => {
   projectObserver.observe(project);
 });
+
+//////////////////////////////////////
+//BACKGROUND FOCUS////////////////////
+////////////////////////////////////
 
 const card = document.querySelectorAll(`.cards`);
 
