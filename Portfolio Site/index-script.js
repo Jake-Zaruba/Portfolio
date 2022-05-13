@@ -9,7 +9,7 @@ const projectObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.8,
   }
 );
 
@@ -26,7 +26,7 @@ const cardObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.8,
   }
 );
 
