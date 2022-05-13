@@ -366,12 +366,27 @@ body {
 /* ******CARDS****** */
 
 .section-projects {
-  background-color: #eee;
+  /* background-color: #eee; */
   padding-top: 20rem;
+  transition: all 0.3s;
   /* background: linear-gradient(
     rgba(194, 126, 204, 0.405) 2rem,
     rgba(194, 126, 204, 0.136) 18rem
   ); */
+}
+
+.project {
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.current-project {
+  opacity: 1;
+}
+
+.current-card {
+  background-color: rgb(251, 251, 251);
+  transition: all 0.5s;
 }
 
 .section-title {
@@ -390,10 +405,11 @@ body {
   justify-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   row-gap: 12rem;
   column-gap: 4rem;
-  padding: 4rem;
+  padding: 12rem 4rem;
+  transition: all 0.3s;
   /* ^^DELETE THIS LATER^^ */
 }
 
@@ -421,6 +437,7 @@ body {
 .project-description .heading-secondary {
   /* text-align: center; */
   margin-bottom: 1.6rem;
+  transition: all 0.3s;
 }
 
 .paragraph-text {
@@ -429,11 +446,13 @@ body {
   font-weight: 300;
   width: 85%;
   margin-bottom: 1.6rem;
+  transition: all 0.3s;
 }
 
 .learn-more {
   font-size: 1.6rem;
   font-weight: 300;
+  transition: all 0.3s;
 }
 
 .learn-more:link,

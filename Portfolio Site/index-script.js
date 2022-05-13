@@ -1,7 +1,35 @@
 "strict mode";
-const css = document.querySelector(`.css`);
-const cssBtn = document.querySelector(`.css-btn`);
 
-cssBtn.addEventListener(`click`, function () {
-  css.classList.remove(`css`);
+const project = document.querySelectorAll(`.project`);
+
+const projectObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(`current-project`, entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+project.forEach((project) => {
+  projectObserver.observe(project);
+});
+
+const card = document.querySelectorAll(`.cards`);
+
+const cardObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(`current-card`, entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+card.forEach((card) => {
+  cardObserver.observe(card);
 });
