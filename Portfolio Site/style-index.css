@@ -459,7 +459,11 @@ body {
 .section-technologies {
   /* height: 50vh; */
   display: block;
-  background-color: rgba(194, 126, 204, 0.136);
+  background: linear-gradient(
+    to right,
+    rgba(194, 126, 204, 0.136) 49.4rem,
+    #eee 2rem
+  );
 }
 
 .section-technologies .section-title {
