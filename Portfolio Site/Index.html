@@ -50,8 +50,8 @@
     </header>
 
     <main>
-      <section id="home-section" class="container section-hero">
-        <div class="hero-container">
+      <section id="home-section" class="section-hero">
+        <div class="hero-container container">
           <div class="hero-text-box">
             <h1 class="heading-primary">JAKE ZARUBA</h1>
             <h2 class="heading-secondary">WEB DEVELOPER</h2>
@@ -64,28 +64,19 @@
           </div>
           <div class="hero-links-container">
             <div class="resume-container">
-              <div class="resume">
-                <div class="resume-text">
-                  <h1>Resumé</h1>
-                </div>
-              </div>
+              <a class="resume">Resumé</a>
             </div>
             <div class="resume-container">
-              <div class="resume">
-                <div class="resume-text">
-                  <h1>GitHub</h1>
-                </div>
-              </div>
+              <a href="https://github.com/Jake-Zaruba" class="resume" target="_blank" rel="noreferrer noopener" >GitHub</a>
             </div>
           </div>
-            <!-- <button class="hero-btn css-btn">Add CSS</button>
-            <button class="hero-btn dark-btn">Add Javascript</button> -->
-          </div>
+        </div>
+        <div class="break-lines">
+          <div class="hero-break break-1"></div>
+          <div class="hero-break break-2"></div>
+          <div class="hero-break break-3"></div>
         </div>
       </section>
-      <div class="hero-break break-1"></div>
-      <div class="hero-break break-2"></div>
-      <div class="hero-break break-3"></div>
       
 
       <!-- ******CARDS****** -->
@@ -141,25 +132,7 @@
       <div class="hero-break break-2"></div>
       <div class="hero-break break-3"></div>
 
-
-      <section id="technologies-section" class="section-technologies">
-        <h1 id="technologies-title" class="section-title">TECHNOLOGIES</h1>
-        <h2 class="heading-secondary">What I use</h2>
-        <div class="tech-container">
-          <img class="tech-icon" src="/img/icon-html.svg">
-          <img class="tech-icon" src="/img/icon-css.svg">
-          <img class="tech-icon" src="/img/icon-js.png">
-          <img class="tech-icon" src="/img/icon-figma.png">
-          <img class="tech-icon" src="/img/icon-adobe-photoshop.png">
-          <img class="tech-icon" src="/img/icon-iadobe-illustrator.png">
-        </div>
-        <h2 class="heading-secondary">What I'm learning</h2>
-        <div class="tech-container">
-          <img class="tech-icon" src="/img/icon-sass.png">
-          <img class="tech-icon" src="/img/icon-mongodb.svg">
-          <img class="tech-icon" src="/img/icon-node-js.svg">
-        </div>
-      </section>
+      <!-- *****EMPLOYMENT***** -->
 
       <section id="employment-section" class="section-timeline">
         <h1 id="employment-title" class="section-title">EMPLOYMENT</h1>
@@ -188,64 +161,75 @@
       <section id="about-section" class="section-about container">
         <h1 id="about-title" class="section-title">ABOUT</h1>
         <div class="about-container">
+          <div class="about-overview">
           <div class="about-text-container">
             <h2 class="heading-secondary">Hey, I'm Jake.</h2>
             <p class="paragraph-text">I've been running a wedding photography business full time since 2015. <br>I love creating, and after 130 weddings, I felt as though I was no longer growing or challenging myself. When I first started my business, I made my website using a wordpress template. I was obsessed with customizing as many features as I could, but with my limited knowledge at the time, I had to compromise.</p>
             <br>
             <p class="paragraph-text"> Six years later in 2021, I decided to dive into web development with the goal of re-creating my website the way I had intended all those years ago. That project grew into an absolute obsession with web design and development. Shortly after that project, I applied for an IT support role with J.J. Keller to take a step towards a career in tech, and I'm now ready to take my next step.</p>
           </div>
+          <div class="tech-container">
+            <button class="btn-current-toolkit">Current using</button>
+            <button class="btn-learning-toolkit">Currently learning</button>
+            <img class="tech-icon" src="/img/icon-html.svg">
+            <img class="tech-icon" src="/img/icon-css.svg">
+            <img class="tech-icon" src="/img/icon-js.png">
+            <img class="tech-icon" src="/img/icon-vue.png">
+            <img class="tech-icon" src="/img/icon-figma.png">
+            <img class="tech-icon" src="/img/icon-adobe-photoshop.png">
+            <img class="tech-icon" src="/img/icon-iadobe-illustrator.png">
+          </div>
+        </div>
         <img class="about-photo" src="/img/jake-zaruba-headshot.webp" alt="Professional photo of Jake Zaruba">
        </div>
       </section>
       <section id="contact-section" class="section-contact container" >
         <h1 id="contact-title" class="section-title">CONTACT</h1>
         <div class="contact-container">
+          <div class="contact-text-box">
+            <h2 class="heading-secondary">Let's talk!</h2>
+          </div>
           <div class="contact-form-box">
-            <form id="contact" action="https://formspree.io/f/mlezoeva" method="post" class="contact-form" name="contact" >
+            <form id="contact-form" action="https://formspree.io/f/mlezoeva" method="post" class="contact-form" name="contact" >
               <div class="full-name">
                 <label for="Full Name">Full name</label>
                 <input
-                id="full-name"
-                type="text"
-                placeholder="Enter Name"
-                name="full-name"
-                required
-                />
+                  id="full-name"
+                  autocomplete="off"
+                  type="text"
+                  placeholder="Enter Name"
+                  name="full-name"
+                  required
+                  />
+                </div>
+                <div class="email-address">
+                  <label for="Email">Email address</label>
+                  <input
+                  id="email"
+                  type="email"
+                  placeholder="email@example.com"
+                  name="email"
+                  required
+                  />
+                </div>
+                <div class="message">
+                  <label for="message">Message</label>
+                  <textarea
+                  id="message"
+                  autocomplete="off"
+                  type="text"
+                  name="message"
+                  required
+                  ></textarea>
+                </div>
+                <h3 id="status"></h3>
+                <button type="submit" class="contact-btn">Submit</button>
               </div>
-              <div class="email-address">
-                <label for="Email">Email address</label>
-                <input
-                id="email"
-                type="email"
-                placeholder="email@example.com"
-                name="email"
-                required
-                />
-              </div>
-              <div class="message">
-                <label for="message">Message</label>
-                <textarea
-                id="message"
-                type="text"
-                name="message"
-                required
-                ></textarea>
-              </div>
-              <h3 id="status"></h3>
-              <button type="submit" class="contact-btn">Submit</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        </section>
+      </section>
     </main>
   </body>
-  <script
-  type="module"
-  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-  nomodule
-  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-></script>
 <script src="index-script.js"></script>
 </html>

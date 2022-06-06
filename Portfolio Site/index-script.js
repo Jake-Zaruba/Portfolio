@@ -128,13 +128,11 @@ job3Observer.observe(document.getElementById(`job-3`));
 
 const home = document.getElementById(`home`);
 const projects = document.getElementById(`projects`);
-const technologies = document.getElementById(`technology`);
 const employment = document.getElementById(`employment`);
 const about = document.getElementById(`about`);
 const contact = document.getElementById(`contact`);
 /////////
 const projectsTitle = document.getElementById(`projects-title`);
-const technologiesTitle = document.getElementById(`technologies-title`);
 const employmentTitle = document.getElementById(`employment-title`);
 const aboutTitle = document.getElementById(`about-title`);
 const contactTitle = document.getElementById(`contact-title`);
@@ -156,13 +154,6 @@ const linkObserver = new IntersectionObserver(
         } else {
           projects.classList.remove(`section-active`);
           // projectsTitle.classList.remove(`title-animation`);
-        }
-        if (currentSection === `technologies-section`) {
-          technologies.classList.add(`section-active`);
-          technologiesTitle.classList.add(`title-animation`);
-        } else {
-          technologies.classList.remove(`section-active`);
-          // technologiesTitle.classList.remove(`title-animation`);
         }
         if (currentSection === `employment-section`) {
           employment.classList.add(`section-active`);
