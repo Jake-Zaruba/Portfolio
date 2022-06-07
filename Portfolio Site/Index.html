@@ -16,7 +16,6 @@
     <title>Jake Zaruba - Portfolio</title>
   </head>
   <body>
-    <div class="hero-main-break"></div>
     <header class="header">
       <a href="#">
         <img
@@ -51,26 +50,28 @@
 
     <main>
       <section id="home-section" class="section-hero">
-        <div class="hero-container container">
-          <div class="hero-text-box">
-            <h1 class="heading-primary">JAKE ZARUBA</h1>
-            <h2 class="heading-secondary">WEB DEVELOPER</h2>
-            <div class="hero-line"></div>
-            <p class="hero-description">
-              Hey there, my name is Jake. I'm a wedding <br />
-              photographer and aspiring web developer. <br />
-              Take a look around to see some of my work.
-            </p>
-          </div>
-          <div class="hero-links-container">
-            <div class="resume-container">
-              <a class="resume">Resumé</a>
+        <div class="wrapper">
+          <div class="hero-container">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">JAKE ZARUBA</h1>
+              <h2 class="heading-secondary">WEB DEVELOPER</h2>
+              <div class="hero-line"></div>
+              <p class="hero-description">
+                Hey there, my name is Jake. I'm a wedding <br />
+                photographer and aspiring web developer. <br />
+                Take a look around to see some of my work.
+              </p>
             </div>
-            <div class="resume-container">
-              <a href="https://github.com/Jake-Zaruba" class="resume" target="_blank" rel="noreferrer noopener" >GitHub</a>
+            <div class="hero-links-container">
+              <div class="resume-container">
+                <a class="btn">Resumé</a>
+              </div>
+              <div class="resume-container">
+                <a href="https://github.com/Jake-Zaruba" class="btn" target="_blank" rel="noreferrer noopener" >GitHub</a>
+              </div>
             </div>
           </div>
-        </div>
+       </div>
         <div class="break-lines">
           <div class="hero-break break-1"></div>
           <div class="hero-break break-2"></div>
@@ -167,10 +168,14 @@
             <p class="paragraph-text">I've been running a wedding photography business full time since 2015. <br>I love creating, and after 130 weddings, I felt as though I was no longer growing or challenging myself. When I first started my business, I made my website using a wordpress template. I was obsessed with customizing as many features as I could, but with my limited knowledge at the time, I had to compromise.</p>
             <br>
             <p class="paragraph-text"> Six years later in 2021, I decided to dive into web development with the goal of re-creating my website the way I had intended all those years ago. That project grew into an absolute obsession with web design and development. Shortly after that project, I applied for an IT support role with J.J. Keller to take a step towards a career in tech, and I'm now ready to take my next step.</p>
+            <br>
+            <p class="paragraph-text">My focus thus far has been on frontend development and design, but I'm now focusing on learning backend development with Node.js, Express.js, and MongoDB. My goal is to be comfortable using the MERN stack by next year.</p>
           </div>
           <div class="tech-container">
-            <button class="btn-current-toolkit">Current using</button>
-            <button class="btn-learning-toolkit">Currently learning</button>
+            <div class="btn-toolkit-container">
+              <button class="btn btn-current-toolkit">Toolkit</button>
+              <button class="btn btn-hide-toolkit">Hide</button>
+            </div>
             <img class="tech-icon" src="/img/icon-html.svg">
             <img class="tech-icon" src="/img/icon-css.svg">
             <img class="tech-icon" src="/img/icon-js.png">

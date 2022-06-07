@@ -185,3 +185,34 @@ const linkObserver = new IntersectionObserver(
 section.forEach((section) => {
   linkObserver.observe(section);
 });
+
+//////////////////////////////////////
+//TOOLKIT BUTTON ANIMATION ///////////
+//////////////////////////////////////
+
+const toolkitBtn = document.querySelector(`.btn-current-toolkit`);
+const hideBtn = document.querySelector(`.btn-hide-toolkit`);
+const techContainer = document.querySelector(`.tech-container`);
+const techIcons = document.querySelectorAll(`.tech-icon`);
+
+toolkitBtn.addEventListener(`click`, () => {
+  techIcons.forEach((icon) => {
+    icon.style.opacity = 0;
+  });
+  toolkitBtn.style.display = `none`;
+  hideBtn.style.display = `block`;
+  techContainer.classList.remove(`tech-hide-animation`);
+  techContainer.classList.toggle(`tech-show-animation`);
+  techContainer.style.borderBottom = `solid 0.4rem #c27ecc67`;
+});
+
+hideBtn.addEventListener(`click`, () => {
+  techIcons.forEach((icon) => {
+    icon.style.opacity = 1;
+  });
+  toolkitBtn.style.display = `block`;
+  hideBtn.style.display = `none`;
+  techContainer.classList.toggle(`tech-show-animation`);
+  techContainer.classList.add(`tech-hide-animation`);
+  techContainer.style.borderBottom = `solid 0.4rem transparent`;
+});
