@@ -44,6 +44,14 @@ body {
 
 .section-active {
   border-bottom: solid 0.4rem rgba(194, 126, 204, 0.405);
+  transform: translateY(0.1rem);
+}
+
+#home,
+#projects,
+#employment,
+#about {
+  transition: all 0.3s;
 }
 
 .logo {
@@ -341,26 +349,23 @@ body {
 }
 
 .section-projects .section-title {
-  position: sticky;
+  /* position: sticky; */
   top: 5.7rem;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
 .project {
   opacity: 0.3;
   transition: all 0.3s;
-  backdrop-filter: opacity(0%);
 }
 
 .current-project {
   opacity: 1;
-  backdrop-filter: opacity(0%);
 }
 
 .current-card {
   background-color: rgb(251, 251, 251);
   transition: all 0.5s;
-  backdrop-filter: opacity(0%);
 }
 
 .cards {
@@ -373,7 +378,6 @@ body {
   column-gap: 4rem;
   padding: 12rem 4rem;
   transition: all 0.3s;
-  backdrop-filter: opacity(0%);
   /* ^^DELETE THIS LATER^^ */
 }
 
@@ -396,7 +400,6 @@ body {
   align-self: center;
   margin-left: 8rem;
   margin-right: 0;
-  backdrop-filter: opacity(0%);
 }
 
 .project-description .heading-secondary {
@@ -412,7 +415,6 @@ body {
   width: 85%;
   margin-bottom: 1.6rem;
   transition: all 0.3s;
-  backdrop-filter: opacity(0%);
 }
 
 .learn-more {
@@ -638,7 +640,9 @@ body {
   animation-fill-mode: forwards;
 }
 
+/* *************** */
 /* *****ABOUT***** */
+/* *************** */
 
 .section-about {
   position: relative;
@@ -670,7 +674,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 60%;
-  /* background: #eee; */
+  border-radius: 1rem;
+  background: rgba(238, 238, 238, 0.421);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -748,11 +753,11 @@ body {
 
 @keyframes icon-show-animation {
   0% {
-    transform: translateY(-2rem);
+    transform: scale(0);
     opacity: 0;
   }
   100% {
-    transform: translateY(0rem);
+    transform: scale(1);
     opacity: 1;
   }
 }
