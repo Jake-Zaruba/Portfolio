@@ -92,7 +92,6 @@ body {
 
 .contact {
   position: relative;
-  border: none;
   border-radius: 0.5rem;
   color: white;
   background-color: #333;
@@ -133,7 +132,13 @@ body {
   filter: blur(0.5rem);
   background-size: 400%;
   z-index: -1;
+  transition: all 0.3s;
   animation: contact-btn 25s linear infinite;
+}
+
+.contact::before:hover,
+.contact::after:hover {
+  transition: all 0.3s;
 }
 
 @keyframes contact-btn {
@@ -657,7 +662,7 @@ body {
 } */
 
 .section-about .section-title {
-  position: sticky;
+  /* position: sticky; */
   top: 5.7rem;
   margin: 6rem 0;
   z-index: -1;
@@ -848,7 +853,7 @@ body {
 .about-photo {
   height: 99%;
   width: 33%;
-  z-index: -2;
+  z-index: 1;
 }
 
 /* *****CONTACT***** */
