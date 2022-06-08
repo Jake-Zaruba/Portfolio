@@ -9,15 +9,6 @@
 }
 
 .blog-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1.1fr 1.1fr 1fr;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-}
-
-.blog2-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,13 +16,6 @@
 }
 
 .blog-img {
-  height: 90%;
-  width: 90%;
-  justify-self: flex-end;
-  border: solid 0.4rem rgb(209, 209, 209);
-}
-
-.blog-2-img {
   height: 80%;
   width: 80%;
   border: solid 0.4rem rgb(209, 209, 209);

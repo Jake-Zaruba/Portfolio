@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/jake zaruba favicon 2.png" />
+
+    <link rel="stylesheet" href="style-index.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <title>Jake Zaruba - Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          alt="Jake Zaruba logo"
+          src="img/jake zaruba logo black.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Projects</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">About</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="blog-container container">
+      <h2 class="heading-secondary">MINIMAL WEATHER APP</h2>
+      <img
+        id="img-1"
+        class="blog-img"
+        src="/img/jzp-blog-img-3.png"
+        alt="Screenshot of the 'services' section of my wedding website."
+      />
+      <p id="p1" class="paragraph-text">
+        <strong>This simple app changed everything for me.</strong> Up to this
+        point, I felt comfortable writing <em>some</em> code, but it felt
+        forced. I wasn't sure what to use or when to use it, other than very
+        simple animations or events. I still felt intimidated by APIs, I hadn't
+        used promises, and I was terrified of callbacks. Over the past year I'd
+        read countless times that one day this would all 'click' for me, but
+        what did that mean? Would I know when this happens? It turned out that
+        the answer was yes, and I'd find that answer just a few lines into this
+        app.
+      </p>
+      <br />
+      <p id="p2" class="paragraph-text">
+        As I began this project, I was following a tutorial. I figured I'd just
+        follow along and hopefully catch on to a few main aspects of the coding,
+        then move on to my next project. For some reason, as I typed out the
+        first few lines of code alongside the tutorial, everything suddenly
+        clicked. After fetching one API and displaying its contents in the
+        console, I closed the tutorial, deleted that code, started over, and
+        would then build the entire app from scratch. Some of the code was
+        redundant, some was a bit messy, but it was mine. And I hadn't felt this
+        excited in years.
+      </p>
+      <br />
+      <p id="p3" class="paragraph-text">
+        My plan was to make this a minimal app. I wanted it to display the
+        weather, perhaps on a grey background, and that would be it. But as I
+        understood more and more about what I was coding, all I wanted to do was
+        add more and more custom features. At this point, I decided to download
+        Figma to get a grasp on creating mockups. This turned into me learning
+        the pen tool, creating custom shapes for the whole app, and then
+        translating that mockup into a real web page. Once I had the layout
+        coded, I knew I wanted to add additional features like a forecast,
+        custom changing weather icons, and an advanced weather box.
+      </p>
+      <br />
+      <img
+        id="img-4"
+        class="blog-img"
+        src="/img/jzp-blog-img-4.png"
+        alt="Screenshot of the fullscreen image slider on my wedding website's home page. On the slider is a couple exiting a building surrounded by sparklers."
+      />
+      <p id="p4" class="paragraph-text">
+        I was finally using many of the things I had <em>learned</em> but hadn't
+        used in practice. Destructuring arrays and objects, looping through
+        arrays, working with dates, times, and coordinates, and so much more. I
+        really had to problem solve to create all of the features I wanted. This
+        would sometimes result in a period of brainstorming before doing any
+        actual coding, and intorduced me to flowcharts that I would use to plan
+        out new features. The one feature that the flowcharts helped the most
+        with was creating the forecast. Javascript hours are formatted as 0-23
+        to represent each day, and this became and issue when I created the
+        forecast. I ended up writing two switch statements - one to format the
+        time into standard time (9am, 2pm, etc.), and one to format the forecast
+        past 8pm. At 9pm, my formula for the forecast (current hour + 1, current
+        hour + 2, etc.) would break as the hours would be formatted as 24, 25,
+        and 26.
+      </p>
+      <br />
+      <p id="p5" class="paragraph-text">
+        This project not only sparked my obsession for learning web design and
+        development, but also allowed me to write my first lines of code outside
+        of the safe and easy tutorial environments I had been. After building
+        several static websites, I finally had a dynamic website that reacted to
+        the user's input. I instantly wanted to know more about javascript, and
+        after this project, I dove deeper into learning how web development.
+      </p>
+      <h2 class="heading-secondary">CHALLENGES</h2>
+      <img
+        id="img-1"
+        class="blog-img"
+        src="/img/jzp-blog-img-1.png"
+        alt="Screenshot of the 'services' section of my wedding website."
+      />
+      <p id="p5" class="paragraph-text">
+        <strong>Two of the biggest challenges</strong> I faced while creating
+        this website were performance and accessibility. It was a great project
+        to force myself to learn some best practices for labeling photos and
+        photo sets, as well lazy loading photos and finding optimal image
+        compression methods. Lazy loading helped with performance, but the size
+        of my photos were still weighing the load speed down. After a good
+        amount of trial and error, I was able to find a sweet spot where I could
+        preserve my image quality without facing long loading times on my
+        website.
+      </p>
+      <br />
+      <p id="p6" class="paragraph-text">
+        Another big challenge I ran into was maintaining a creative and
+        appealing photo layout throughout each page while adding media queries
+        for smaller viewports. This project almost immediately showed me why
+        it's crucial to begin building a website with a mobile first approach. I
+        did finally get to a point where I was pleased with the mobile layout,
+        but I learned my lesson and began my next site with the mobile first
+        approach by building out the mockup in Figma with mobile viewports.
+      </p>
+      <h2 class="heading-secondary">TAKEAWAYS</h2>
+      <img
+        id="img-5"
+        class="blog-img"
+        src="/img/jzp-blog-img-5.png"
+        alt="Screenshot of the fullscreen slider on my wedding website's home page. On the slider is a groom holding and kissing his bride on a hilltop."
+      />
+
+      <p id="p7" class="paragraph-text">
+        While building this site, I learned that less is sometimes more with
+        page animations. I had heard this repeated in my courses but didn't
+        appreciate the importance of this idea until I had animations on every
+        aspect of my website. When I revamped this site, I toned it down quite a
+        bit and learned the value of subtlety. When an animation or interactive
+        component did appear, it was much more visually appealing as opposed to
+        trying to keep up with moving elements all throughout the website.
+      </p>
+      <br />
+      <p id="p8" class="paragraph-text">
+        <strong>My main takeaway</strong> from this particular project was that
+        I absolutely love web development. I had used javascript on a real-world
+        project for the first time, and I wanted to jump right into my next
+        project with a much heavier use of javascript to further my
+        understanding of it. Before doing so, I went back to my online courses
+        and spent another two weeks buried in javascript fundamentals. I wanted
+        to write code with intention and not by copying the same small functions
+        over and over as I did while using intersection observers on my wedding
+        website. After two weeks of 10-14 hour days of studying and practicing,
+        I was ready to begin my next project.
+      </p>
+    </section>
+  </body>
+</html>
