@@ -470,7 +470,7 @@ body {
 .card-three {
   background-image: url(img/zarcom-thumb.webp);
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
-  background-size: 100%;
+  background-size: 108%;
   background-repeat: no-repeat;
 }
 
@@ -489,7 +489,7 @@ body {
   font-weight: 700;
 
   margin-bottom: 2rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 
 .card-text {
@@ -500,7 +500,7 @@ body {
   align-self: flex-start;
   justify-self: center;
   margin-top: 3rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 
 .card-style:hover .card-text {
@@ -518,7 +518,7 @@ body {
   text-decoration: none;
   font-weight: lighter;
   opacity: 0%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.6rem;
   font-weight: 700;
   border: 2px solid white;
@@ -746,8 +746,12 @@ body {
   align-content: flex-end;
   padding: 2rem 0 1.6rem 0;
   gap: 1.4rem;
-  border-bottom: solid 0.4rem transparent;
+  /* border-bottom: solid 0.4rem transparent; */
   transition: all 0.3s linear;
+}
+
+.about-container .hero-break {
+  width: 85%;
 }
 
 .tech-icon {
