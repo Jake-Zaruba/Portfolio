@@ -23,9 +23,20 @@
     font-size: 56.25%;
   }
 
+  .hero-container {
+    justify-items: flex-end;
+  }
+
   .hero-links-container {
-    flex-direction: column;
     justify-content: center;
+  }
+
+  .section-hero .heading-secondary {
+    width: 100%;
+  }
+
+  .hero-description {
+    width: 100%;
   }
 
   .section-title {
@@ -60,17 +71,96 @@
   } */
 }
 
+@media (max-width: 67.5em) {
+  .hero-links-container {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 59em) {
   /* *****944px***** */
   html {
     font-size: 50%;
   }
 
+  .header {
+    backdrop-filter: none;
+    background-color: #eee;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(38, 37, 37, 0.557);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 200;
+    transition: all 0.3s ease-out;
+  }
+
+  .show-mobile-nav {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .main-nav-link {
+    font-size: 3rem;
+    color: white !important;
+  }
+
+  .contact::before,
+  .contact::after {
+    top: -11%;
+    right: -5.5%;
+    height: calc(100% + 1rem);
+    width: calc(100% + 1rem);
+  }
+
+  .section-active {
+    border-bottom: solid 0.4rem rgba(246, 185, 255, 0.654);
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  .section-hero {
+    height: 100vh;
+  }
+
   .hero-container {
     flex-direction: column;
   }
 
+  .hero-line {
+    align-self: center;
+  }
+
   .hero-text-box .heading-primary {
+    width: 100%;
+  }
+
+  .hero-text-box .heading-secondary {
+    text-align: center;
     width: 100%;
   }
 
@@ -81,17 +171,27 @@
   }
 
   .hero-description {
-    /* align-self: center; */
+    text-align: center;
+    width: 100%;
   }
 
   .hero-links-container {
     flex-direction: row;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 4rem;
+  }
+
+  .break-lines {
+    margin-top: 20rem;
+    height: 27rem;
   }
 
   .section-title {
-    font-size: 12rem;
+    font-size: 13rem;
+  }
+
+  .section-projects .section-title {
+    margin-bottom: 0rem;
   }
 
   .section-timeline .section-title {
@@ -152,6 +252,12 @@
     margin-bottom: 2rem;
   }
 
+  .section-about .heading-secondary {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -175,8 +281,8 @@
 @media (max-width: 34em) {
   /* *****544px***** */
 
-  .section-about .container {
-    padding: 0;
+  .section-hero {
+    height: 100vh;
   }
 
   .hero-text-box .heading-primary {
@@ -188,7 +294,7 @@
   }
 
   .hero-description {
-    width: 75%;
+    width: 100%;
   }
 
   .hero-text-box {
@@ -205,6 +311,10 @@
     width: 60%;
   }
 
+  .hero-links-container {
+    flex-direction: column;
+  }
+
   .section-title {
     font-size: 7rem;
   }
@@ -212,6 +322,14 @@
   .section-timeline .section-title {
     font-size: 5rem;
     padding: 6rem 0;
+  }
+
+  .section-about .container {
+    padding: 0;
+  }
+
+  .cards {
+    padding: 8rem 0rem;
   }
 
   .card-style {
@@ -230,5 +348,53 @@
 
   .timeline-role {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 28.625em) {
+  /* *****458***** */
+
+  .hero-text-box {
+    justify-content: center;
+  }
+
+  .section-hero .heading-primary {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section-hero .heading-secondary {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    width: 90%;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .card-text {
+    width: 90%;
+  }
+
+  .section-projects .section-title {
+    letter-spacing: 0.6rem;
+  }
+
+  .section-timeline .section-title {
+    letter-spacing: 0.6rem;
+  }
+
+  .section-contact .section-title {
+    letter-spacing: 1rem;
   }
 }

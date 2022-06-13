@@ -11,9 +11,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="img/jake zaruba favicon 2.png" />
-
-    <link rel="stylesheet" href="style-index.css" />
     <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="/blog-queries.css" />
     <title>Jake Zaruba - Portfolio</title>
   </head>
   <body>
@@ -25,28 +24,38 @@
           src="img/jake zaruba logo black.png"
         />
       </a>
+      <div class="mobile-nav-wrapper">
+        <div class="btn-mobile-nav">
+          <div class="top-nav-line"></div>
+          <div class="bottom-nav-line"></div>
+        </div>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="/index.html">Home</a>
+            <a id="home" class="main-nav-link" href="#">Home</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Projects</a>
+            <a id="projects" class="main-nav-link" href="#">Projects</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">About</a>
+            <a id="employment" class="main-nav-link" href="/blog.html"
+              >Employment</a
+            >
           </li>
           <li>
-            <a class="main-nav-link" href="#">Blog</a>
+            <a id="about" class="main-nav-link" href="#">About</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Contact</a>
+            <button id="contact" class="main-nav-link contact" href="#">
+              Contact
+            </button>
           </li>
         </ul>
       </nav>
     </header>
     <section class="blog-container container">
-      <h2 class="heading-secondary">JAKE ZARUBA PHOTOGRAPHY</h2>
+      <h1 class="heading-primary">JAKE ZARUBA PHOTOGRAPHY</h1>
       <img
         id="img-1"
         class="blog-img"
@@ -166,5 +175,6 @@
         I was ready to begin my next project.
       </p>
     </section>
+    <script src="nav.js"></script>
   </body>
 </html>

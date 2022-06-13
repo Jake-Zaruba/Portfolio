@@ -1,8 +1,8 @@
 "strict mode";
 
-// //////////////////////////////////////
-// //PROJECT FOCUS////////////////////
-// ////////////////////////////////////
+/////////////////////////////////////
+////PROJECT FOCUS////////////////////
+/////////////////////////////////////
 
 const project = document.querySelectorAll(`.project`);
 
@@ -169,7 +169,7 @@ const linkObserver = new IntersectionObserver(
           about.classList.remove(`section-active`);
         }
         if (currentSection === `contact-section`) {
-          contact.classList.add(`section-active`);
+          // contact.classList.add(`section-active`);
           contactTitle.classList.add(`title-animation`);
         } else {
           contact.classList.remove(`section-active`);
@@ -178,7 +178,7 @@ const linkObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.25,
   }
 );
 
