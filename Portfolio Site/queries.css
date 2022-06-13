@@ -1,3 +1,28 @@
+@media (min-width: 100em) {
+  /* *****1600px***** */
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text-box .heading-primary,
+  .hero-text-box .heading-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .hero-line {
+    /* justify-self: center; */
+    margin: 2rem auto;
+  }
+}
+
 @media (max-width: 84em) {
   /* *****1344px***** */
   .hero-text-box {

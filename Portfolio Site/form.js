@@ -1,8 +1,9 @@
-var form = document.getElementById("my-form");
+var form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
   event.preventDefault();
-  var status = document.getElementById("my-form-status");
+  var status = document.getElementById("status");
+  var statusMessage = document.querySelector(".status-message");
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -13,7 +14,8 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = "Message sent!";
+        statusMessage.style.backgroundColor = `rgba(194, 126, 204, 0.405)`;
         form.reset();
       } else {
         response.json().then((data) => {
@@ -22,7 +24,7 @@ async function handleSubmit(event) {
               .map((error) => error["message"])
               .join(", ");
           } else {
-            status.innerHTML = "Oops! There was a problem submitting your form";
+            status.innerHTML = "Failed to send";
           }
         });
       }
