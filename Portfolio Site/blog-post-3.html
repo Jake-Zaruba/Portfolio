@@ -7,14 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      defer
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="img/jake zaruba favicon 2.png" />
-
-    <link rel="stylesheet" href="style-index.css" />
     <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="/blog-queries.css" />
     <title>Jake Zaruba - Portfolio</title>
   </head>
   <body>
@@ -26,28 +24,38 @@
           src="img/jake zaruba logo black.png"
         />
       </a>
+      <div class="mobile-nav-wrapper">
+        <div class="btn-mobile-nav">
+          <div class="top-nav-line"></div>
+          <div class="bottom-nav-line"></div>
+        </div>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="/index.html">Home</a>
+            <a id="home" class="main-nav-link" href="#">Home</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Projects</a>
+            <a id="projects" class="main-nav-link" href="#">Projects</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">About</a>
+            <a id="employment" class="main-nav-link" href="/blog.html"
+              >Employment</a
+            >
           </li>
           <li>
-            <a class="main-nav-link" href="#">Blog</a>
+            <a id="about" class="main-nav-link" href="#">About</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Contact</a>
+            <button id="contact" class="main-nav-link contact" href="#">
+              Contact
+            </button>
           </li>
         </ul>
       </nav>
     </header>
     <section class="blog-container container">
-      <h2 class="heading-secondary">ZARCOM</h2>
+      <h1 class="heading-primary">ZARCOM</h1>
       <img
         class="blog-img"
         src="/img/zarcom-thumb.webp"
@@ -79,7 +87,7 @@
       <div class="portrait-img-container">
         <img
           class="blog-img-portrait"
-          src="/img/zarcom-blog-img-3.png"
+          src="/img/zarcom-blog-img-3.webp"
           alt="Screenshot of the 'services' section of my wedding website."
         />
         <img
@@ -115,7 +123,7 @@
       <h2 class="heading-secondary">TAKEAWAYS</h2>
       <img
         class="blog-img"
-        src="/img/zarcom-blog-img-6.png"
+        src="/img/zarcom-blog-img-6.webp"
         alt="Screenshot of the 'services' section of my wedding website."
       />
       <p id="p7" class="paragraph-text">
@@ -139,5 +147,6 @@
         principles.
       </p>
     </section>
+    <script src="nav.js"></script>
   </body>
 </html>

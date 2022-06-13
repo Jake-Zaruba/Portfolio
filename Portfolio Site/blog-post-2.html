@@ -11,9 +11,8 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="img/jake zaruba favicon 2.png" />
-
-    <link rel="stylesheet" href="style-index.css" />
     <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="/blog-queries.css" />
     <title>Jake Zaruba - Portfolio</title>
   </head>
   <body>
@@ -25,28 +24,38 @@
           src="img/jake zaruba logo black.png"
         />
       </a>
+      <div class="mobile-nav-wrapper">
+        <div class="btn-mobile-nav">
+          <div class="top-nav-line"></div>
+          <div class="bottom-nav-line"></div>
+        </div>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="/index.html">Home</a>
+            <a id="home" class="main-nav-link" href="#">Home</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Projects</a>
+            <a id="projects" class="main-nav-link" href="#">Projects</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">About</a>
+            <a id="employment" class="main-nav-link" href="/blog.html"
+              >Employment</a
+            >
           </li>
           <li>
-            <a class="main-nav-link" href="#">Blog</a>
+            <a id="about" class="main-nav-link" href="#">About</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Contact</a>
+            <button id="contact" class="main-nav-link contact" href="#">
+              Contact
+            </button>
           </li>
         </ul>
       </nav>
     </header>
     <section class="blog-container container">
-      <h2 class="heading-secondary">MINIMAL WEATHER APP</h2>
+      <h1 class="heading-primary">MINIMAL WEATHER APP</h1>
       <div class="portrait-img-container">
         <img
           class="blog-img-portrait"
@@ -83,13 +92,14 @@
         weather, perhaps on a grey background, and that would be it. But as I
         understood more about what I was coding, all I wanted to do was add more
         custom features. At this point, I decided to download Figma to get a
-        grasp on creating mockups. I started learning the pen tool, creating
-        custom shapes for the whole app, and then translating that mockup into a
-        real web page. Once I had the layout coded, I knew I wanted to add
-        additional features like a forecast, custom changing weather icons, and
-        an advanced weather box.
+        grasp on creating mockups. I started learning the pen tool, created
+        custom shapes for the whole app, and then translated that mockup into
+        code. Once I had the layout coded, I knew I wanted to add additional
+        features like a forecast, custom changing weather icons, and an advanced
+        weather box. My website looked identical to my mockups, and I couldn't
+        wait to begin the programming.
       </p>
-      <br />
+      <h2 class="heading-secondary">Figma mockups</h2>
       <div class="portrait-img-container">
         <img
           class="blog-img-portrait"
@@ -103,7 +113,7 @@
         />
         <img
           class="blog-img-portrait"
-          src="/img/weather-blog-img-4.png"
+          src="/img/weather-blog-img-4.webp"
           alt="Screenshot of the 'services' section of my wedding website."
         />
       </div>
@@ -201,5 +211,6 @@
         features, not taking them away.
       </p>
     </section>
+    <script src="nav.js"></script>
   </body>
 </html>

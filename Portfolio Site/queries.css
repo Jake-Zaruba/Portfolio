@@ -178,7 +178,7 @@
   .hero-links-container {
     flex-direction: row;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .break-lines {
@@ -304,11 +304,16 @@
   }
 
   .resume-container .btn {
-    width: 95%;
+    height: 80%;
+    width: 95.5%;
   }
 
   .resume-container {
     width: 60%;
+  }
+
+  .resume-container::before {
+    right: -5rem;
   }
 
   .hero-links-container {
