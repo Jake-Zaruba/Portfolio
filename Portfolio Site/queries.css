@@ -169,7 +169,7 @@
   }
 
   .section-hero {
-    height: 100vh;
+    height: 85vh;
   }
 
   .hero-container {
@@ -207,8 +207,7 @@
   }
 
   .break-lines {
-    margin-top: 20rem;
-    height: 27rem;
+    height: 10rem;
   }
 
   .section-title {
@@ -307,7 +306,7 @@
   /* *****544px***** */
 
   .section-hero {
-    height: 100vh;
+    height: 90vh;
   }
 
   .hero-text-box .heading-primary {

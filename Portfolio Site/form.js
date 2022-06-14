@@ -16,6 +16,10 @@ async function handleSubmit(event) {
       if (response.ok) {
         status.innerHTML = "Message sent!";
         statusMessage.style.backgroundColor = `rgba(194, 126, 204, 0.405)`;
+        setTimeout(() => {
+          status.innerHTML = "";
+          statusMessage.style.backgroundColor = `transparent`;
+        }, 3500);
         form.reset();
       } else {
         response.json().then((data) => {
