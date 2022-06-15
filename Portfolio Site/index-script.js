@@ -178,7 +178,7 @@ const linkObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.25,
+    threshold: 0.3,
   }
 );
 

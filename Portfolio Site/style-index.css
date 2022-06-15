@@ -668,6 +668,7 @@ body {
 .section-timeline .section-title {
   padding: 12rem 0;
   font-size: 15rem;
+  margin-bottom: 4rem;
 }
 
 .timeline-line {
