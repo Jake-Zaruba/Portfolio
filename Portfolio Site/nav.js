@@ -57,3 +57,14 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+///////////////////////////////
+////COPYRIGHT YEAR/////////////
+///////////////////////////////
+
+let year = document.getElementById(`year`);
+const d = new Date();
+let currentYear = d.getFullYear();
+
+// Replace copyright text with current year //
+year.innerHTML = currentYear;
