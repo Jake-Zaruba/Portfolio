@@ -42,11 +42,17 @@ allLinks.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // Scroll back to top
-    if (href === "#")
+    if (href === "#") {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
+      topNavLine.classList.remove(`top-nav-line-animation`);
+      bottomNavLine.classList.remove(`bottom-nav-line-animation`);
+      mainNav.classList.remove(`show-mobile-nav`);
+      topNavLine.classList.add(`close-top-nav-line-animation`);
+      bottomNavLine.classList.add(`close-bottom-nav-line-animation`);
+    }
 
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
@@ -54,6 +60,11 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({
         behavior: "smooth",
       });
+      topNavLine.classList.remove(`top-nav-line-animation`);
+      bottomNavLine.classList.remove(`bottom-nav-line-animation`);
+      mainNav.classList.remove(`show-mobile-nav`);
+      topNavLine.classList.add(`close-top-nav-line-animation`);
+      bottomNavLine.classList.add(`close-bottom-nav-line-animation`);
     }
   });
 });

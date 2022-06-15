@@ -1112,8 +1112,8 @@ textarea {
 #footer {
   position: relative;
   display: flex;
-  justify-content: space-around;
-  gap: 5rem;
+  justify-content: center;
+  gap: 1rem;
   height: 15vh;
   border-top: 0.2rem solid rgba(194, 126, 204, 0.405);
   /* overflow: hidden; */
@@ -1138,10 +1138,11 @@ textarea {
   top: 50%;
   left: -10%;
   background-color: #eee;
+  border-bottom-right-radius: 50%;
   height: 70%;
   width: calc(100% + 1rem);
   pointer-events: none;
-  z-index: 3;
+  z-index: -1;
 }
 
 #up-arrow {
@@ -1150,10 +1151,6 @@ textarea {
   width: 3rem;
   margin: 0.4rem 0 1rem 1.3rem;
   z-index: 4;
-}
-
-#copyright {
-  /* margin-right: 2.6rem; */
 }
 
 .footer-text {
@@ -1169,7 +1166,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   width: 15rem;
   gap: 1rem;
 }
@@ -1179,7 +1176,8 @@ textarea {
   flex-direction: column;
   justify-content: center;
   /* align-items: flex-end; */
-  width: 15rem;
+  width: 10rem;
+  margin-left: 3rem;
   gap: 1rem;
 }
 
@@ -1195,7 +1193,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 15rem;
   gap: 1rem;
 }
