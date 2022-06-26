@@ -539,7 +539,8 @@ body {
 }
 
 .card-one {
-  background-image: url(/img/jzp-thumb.webp);
+  background-image: url(/img/road-trip-thumb.png);
+  background-position: center 25%;
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -548,15 +549,15 @@ body {
 
 .card-one:hover {
   color: white;
-  background-image: linear-gradient(to bottom, #0000009a, #272727a6),
-    url(/img/jzp-thumb.webp);
+  background-image: linear-gradient(to bottom, #000000b9, #272727c3),
+    url(/img/road-trip-thumb.png);
   box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
   transform: scale(1.05, 1.05);
 }
 
 .card-two {
-  background-image: url(/img/weather-app.png);
+  background-image: url(/img/jzp-thumb.webp);
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -566,13 +567,30 @@ body {
 .card-two:hover {
   color: white;
   background-image: linear-gradient(to bottom, #0000009a, #272727a6),
-    url(/img/weather-app.png);
+    url(/img/jzp-thumb.webp);
   box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.2);
   /* transform: scale(10%); */
   transform: scale(1.05, 1.05);
 }
 
 .card-three {
+  background-image: url(/img/weather-app.png);
+  box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* margin-bottom: 6rem; */
+}
+
+.card-three:hover {
+  color: white;
+  background-image: linear-gradient(to bottom, #000000b4, #272727c6),
+    url(/img/weather-app.png);
+  box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.2);
+  /* transform: scale(10%); */
+  transform: scale(1.05, 1.05);
+}
+
+.card-four {
   background-image: url(/img/zarcom-thumb.webp);
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 115%;
@@ -580,7 +598,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.card-three:hover {
+.card-four:hover {
   color: white;
   background-image: linear-gradient(to bottom, #0000009a, #272727a6),
     url(/img/zarcom-thumb.webp);
@@ -589,14 +607,14 @@ body {
   transform: scale(1.05, 1.05);
 }
 
-.card-four {
+.card-five {
   background-image: url(/img/portfolio-blog-img-1.png);
   box-shadow: 0 6px 5px 2px rgba(0, 0, 0, 0.2);
   background-size: 108%;
   background-repeat: no-repeat;
 }
 
-.card-four:hover {
+.card-five:hover {
   color: white;
   background-image: linear-gradient(to bottom, #0000009a, #272727a6),
     url(/img/portfolio-blog-img-1.png);
@@ -606,7 +624,7 @@ body {
 }
 
 .card-title {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   align-self: flex-end;
   font-weight: 700;
 
@@ -616,8 +634,8 @@ body {
 
 .card-text {
   padding: 1rem;
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 500;
   opacity: 0%;
   align-self: flex-start;
   justify-self: center;
