@@ -103,6 +103,10 @@
 @media (max-width: 34em) {
   /* *****544px***** */
 
+  .main-nav {
+    width: 50%;
+  }
+
   .heading-primary {
     width: 100%;
     text-align: center;

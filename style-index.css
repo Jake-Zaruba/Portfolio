@@ -139,6 +139,7 @@ body {
     #7bcfc7
   );
   filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
   background-size: 400%;
   z-index: -1;
   transition: all 0.3s;

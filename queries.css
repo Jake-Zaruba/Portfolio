@@ -314,6 +314,10 @@
 @media (max-width: 34em) {
   /* *****544px***** */
 
+  .main-nav {
+    width: 50%;
+  }
+
   .section-hero {
     height: 90vh;
   }
