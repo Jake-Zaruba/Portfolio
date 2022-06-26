@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="img/jake zaruba favicon 2.png" />
     <link rel="stylesheet" href="blog.css" />
     <link rel="stylesheet" href="/blog-queries.css" />
-    <title>Jake Zaruba - Portfolio</title>
+    <title>Jake Zaruba - Photography Website Blog</title>
   </head>
   <body>
     <header class="header">
@@ -27,23 +27,37 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a id="home" class="main-nav-link" href="#">Home</a>
+            <a id="home" class="main-blog-link" href="/index.html">Home</a>
           </li>
           <li>
-            <a id="projects" class="main-nav-link" href="#">Projects</a>
+            <a
+              id="projects"
+              class="main-blog-link"
+              href="/index.html#projects-scroll"
+              >Projects</a
+            >
           </li>
           <li>
-            <a id="employment" class="main-nav-link" href="/blog.html"
+            <a
+              id="employment"
+              class="main-blog-link"
+              href="/index.html#employment-scroll"
               >Employment</a
             >
           </li>
           <li>
-            <a id="about" class="main-nav-link" href="#">About</a>
+            <a id="about" class="main-blog-link" href="/index.html#about-scroll"
+              >About</a
+            >
           </li>
           <li>
-            <button id="contact" class="main-nav-link contact" href="#">
+            <a
+              id="contact"
+              class="main-blog-link contact"
+              href="/index.html#contact-section"
+            >
               Contact
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -169,6 +183,76 @@
         I was ready to begin my next project.
       </p>
     </section>
+    <footer id="footer">
+      <div class="footer-col-1">
+        <a href="#">
+          <img
+            class="logo"
+            alt="A cursive text logo that reads 'Jake Zaruba.'"
+            src="img/jake zaruba logo black.png"
+          />
+        </a>
+      </div>
+      <div class="footer-col-3">
+        <p class="footer-text"><strong>Contact</strong></p>
+        <a
+          href="https://www.linkedin.com/in/jake-zaruba-587b24241"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="footer-text footer-link"
+          >LinkedIn</a
+        >
+        <p class="footer-text">920-574-4984</p>
+        <p class="footer-text">zarubajake@gmail.com</p>
+      </div>
+      <div class="footer-col-2">
+        <a href="/index.html" class="footer-text footer-link main-blog-link"
+          >Home</a
+        >
+        <a
+          href="index.html#projects-scroll"
+          class="footer-text footer-link main-blog-link"
+          >Projects</a
+        >
+        <a
+          href="index.html#employment-section"
+          class="footer-text footer-link main-blog-link"
+          >Employment</a
+        >
+        <a
+          href="index.html#about-scroll"
+          class="footer-text footer-link main-blog-link"
+          >About</a
+        >
+        <a
+          href="index.html#contact-section"
+          class="footer-text footer-link main-blog-link"
+          >Contact</a
+        >
+      </div>
+      <div class="footer-col-4">
+        <p id="copyright" class="footer-text">
+          &copy; <span id="year">2022</span> Jake Zaruba
+        </p>
+        <p class="footer-text">All Rights Reserved</p>
+      </div>
+      <a href="#" class="return-to-top main-nav-link"
+        ><svg
+          id="up-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M7 11l5-5m0 0l5 5m-5-5v12"
+          /></svg
+      ></a>
+    </footer>
     <script src="nav.js"></script>
   </body>
 </html>

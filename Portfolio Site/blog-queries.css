@@ -52,7 +52,7 @@
     gap: 3rem;
   }
 
-  .main-nav-link {
+  .main-blog-link {
     font-size: 3rem;
     color: white !important;
   }
@@ -74,6 +74,11 @@
     pointer-events: all;
     visibility: visible;
   }
+
+  .blog-img-portrait {
+    height: 60%;
+    width: 60%;
+  }
 }
 
 @media (max-width: 44em) {
@@ -83,8 +88,27 @@
   }
 }
 
+@media (max-width: 34em) {
+  /* *****544px***** */
+
+  .heading-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog-img-portrait {
+    height: 90%;
+    width: 90%;
+  }
+}
+
 @media (max-width: 28.625em) {
   /* *****458***** */
+
+  .main-blog-link {
+    font-size: 2.6rem;
+  }
+
   .container {
     padding: 8rem 2rem 6rem 2rem;
   }

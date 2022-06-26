@@ -1128,6 +1128,8 @@ textarea {
   transition: all 0.4s;
 }
 
+/* ***** FOOTER ***** */
+
 #footer {
   position: relative;
   display: flex;
@@ -1176,9 +1178,12 @@ textarea {
   font-size: 1.2rem;
 }
 
+#footer .main-nav-link {
+  text-decoration: underline;
+}
+
 .footer-link:link,
 .footer-link:visited {
-  text-decoration: none;
   color: #333;
 }
 

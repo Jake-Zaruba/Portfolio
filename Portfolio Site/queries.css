@@ -258,6 +258,15 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  #footer .main-nav-link {
+    font-size: 1.2rem;
+  }
+
+  #footer .main-nav-link:link,
+  #footer .main-nav-link:visited {
+    color: #333 !important;
+  }
 }
 
 @media (max-width: 44em) {
@@ -382,6 +391,10 @@
 
 @media (max-width: 28.625em) {
   /* *****458***** */
+
+  .main-nav-link {
+    font-size: 2.6rem;
+  }
 
   .hero-text-box {
     justify-content: center;

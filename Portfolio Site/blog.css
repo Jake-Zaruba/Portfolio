@@ -62,15 +62,15 @@ body {
   text-decoration: none;
 }
 
-.main-nav-link {
+.main-blog-link {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: lighter;
   color: #333333;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-blog-link:link,
+.main-blog-link:visited {
   display: inline-block;
   font-weight: 500;
   color: #333333;
@@ -86,6 +86,15 @@ body {
   padding: 0.8rem;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.contact:link {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.contact:visited {
+  color: white;
 }
 
 .contact:hover {
@@ -330,4 +339,94 @@ body {
 #img-4 {
   grid-column: 2;
   grid-row: 4;
+}
+
+#footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 15vh;
+  border-top: 0.2rem solid rgba(194, 126, 204, 0.405);
+  /* overflow: hidden; */
+}
+
+.return-to-top {
+  position: absolute;
+  top: -3rem;
+  left: 48%;
+  height: 6rem;
+  width: 6rem;
+  background-color: #eee;
+  border: 0.2rem solid rgba(194, 126, 204, 0.405);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.return-to-top::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  background-color: #eee;
+  border-bottom-right-radius: 50%;
+  height: 70%;
+  width: calc(100% + 1rem);
+  pointer-events: none;
+  z-index: -1;
+}
+
+#up-arrow {
+  stroke: #333;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.4rem 0 1rem 1.3rem;
+  z-index: 4;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  gap: 1rem;
+}
+
+.footer-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  width: 10rem;
+  margin-left: 3rem;
+  gap: 1rem;
+}
+
+.footer-col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15rem;
+  gap: 1rem;
+}
+
+.footer-col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 15rem;
+  gap: 1rem;
 }
