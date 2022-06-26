@@ -391,6 +391,10 @@
   .timeline-role {
     font-size: 1.6rem;
   }
+
+  #footer .logo {
+    transform: scale(0.7);
+  }
 }
 
 @media (max-width: 28.625em) {
@@ -452,5 +456,12 @@
   .tech-icon {
     height: 4rem;
     width: 4rem;
+  }
+
+  .return-to-top {
+    left: 43%;
+  }
+  .return-to-top::before {
+    left: -10%;
   }
 }
