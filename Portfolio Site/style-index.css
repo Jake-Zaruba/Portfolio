@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Monsterrat", sans-serif;
+  font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
@@ -629,7 +629,7 @@ body {
   font-weight: 700;
 
   margin-bottom: 2rem;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .card-text {
@@ -640,7 +640,7 @@ body {
   align-self: flex-start;
   justify-self: center;
   margin-top: 3rem;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .card-style:hover .card-text {
@@ -668,11 +668,11 @@ body {
   color: white;
   padding: 1rem 2rem;
   /* border-radius: 1rem; */
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .card-style:hover .card-btn {
-  background-color: transparent;
+  /* background-color: transparent; */
   opacity: 100%;
 }
 
@@ -1178,6 +1178,7 @@ textarea {
 
 .footer-link:link,
 .footer-link:visited {
+  text-decoration: none;
   color: #333;
 }
 

@@ -34,7 +34,7 @@ mobileNavBtn.addEventListener(`click`, () => {
 ////SMOOTH SCROLLING/////////////
 /////////////////////////////////
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(`.main-nav-link`);
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -55,7 +55,7 @@ allLinks.forEach(function (link) {
     }
 
     // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    else if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({
         behavior: "smooth",
