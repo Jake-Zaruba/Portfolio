@@ -351,6 +351,16 @@ body {
   /* overflow: hidden; */
 }
 
+#footer .main-blog-link:link,
+#footer .main-blog-link:visited {
+  text-decoration: underline;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: underline !important;
+}
+
 .return-to-top {
   position: absolute;
   top: -3rem;
