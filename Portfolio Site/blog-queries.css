@@ -79,6 +79,18 @@
     height: 60%;
     width: 60%;
   }
+
+  #footer .main-blog-link:link,
+  #footer .main-blog-link:visited {
+    font-size: 1.2rem;
+    color: #333 !important;
+    text-decoration: underline;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 44em) {
