@@ -334,6 +334,7 @@
 
   .hero-description {
     width: 100%;
+    font-size: 2rem;
   }
 
   .hero-text-box {
@@ -392,6 +393,10 @@
 
   .timeline-role {
     font-size: 1.6rem;
+  }
+
+  .paragraph-text {
+    font-size: 1.8rem;
   }
 
   #footer .logo {
