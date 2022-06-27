@@ -151,6 +151,10 @@
     width: 100%;
   }
 
+  .footer-col-2 {
+    margin-left: 0rem;
+  }
+
   .return-to-top {
     left: 43%;
   }
