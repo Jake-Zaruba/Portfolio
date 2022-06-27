@@ -419,7 +419,7 @@ body {
 }
 
 .break-lines {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
   height: 10rem;
   background: #eee;
 }
