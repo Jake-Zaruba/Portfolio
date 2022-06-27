@@ -228,6 +228,7 @@
     align-items: center;
     text-align: center;
     padding: 8rem 4rem;
+    margin-top: 0rem;
     gap: 6rem;
   }
 
@@ -294,6 +295,7 @@
   .about-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
   }
 
   .about-overview {
@@ -306,7 +308,7 @@
 
   .about-photo {
     height: auto;
-    width: 50%;
+    width: 70%;
     z-index: 1;
   }
 }
@@ -447,6 +449,11 @@
 
   .section-contact .section-title {
     letter-spacing: 1rem;
+  }
+
+  .about-photo {
+    height: auto;
+    width: 80%;
   }
 
   .tech-icon-container {
