@@ -232,6 +232,10 @@
     gap: 6rem;
   }
 
+  .section-projects .paragraph-text {
+    text-align: left;
+  }
+
   .card-style {
     width: 54rem;
     height: 36rem;
